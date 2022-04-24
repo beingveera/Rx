@@ -1,0 +1,201 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.header{
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	box-shadow: 1px 1px 1px .5px lavender;
+	line-height: 50px;
+	width: 100%;
+	position: fixed;
+}
+
+
+.logo{
+	width: 50%;
+	height: 100%;
+}
+
+.logo img{
+	height: 35px;
+	width: 35px;
+	position: fixed;
+	left: 70px;
+	top: 8px;
+}
+
+.logo img:hover{
+	cursor: pointer;
+}
+
+.links{
+	width:50%;
+	height: 50px;
+	width: 50%;	
+}
+
+.links ul{
+	list-style: none;
+	display: flex;
+}
+
+.links li a{
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+	font-weight: 100;
+	margin: 0px 20px;
+}
+
+.links li a:hover{
+	border-bottom: 2px solid #0dc2ea;
+	padding-bottom: 10px;
+}
+
+
+.banner{
+	position: relative;
+	top: 50px;
+}
+
+.inner-banner img{
+	height: 500px;
+	width: 100%;
+	border: 1px solid lavender;
+	box-shadow: 1px 1px 1px lavender;
+}
+
+.inner-banner img:hover{
+	animation: banne alternate infinite 1s ;
+}
+
+.inner-banner .banner-content{
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+	left: 100px;
+}
+
+
+.banner-content p{
+	font-size: 30px;
+	font-family: sans-serif;
+	color: wheat;
+	font-weight: 900;
+	text-align: center;
+	animation: content infinite alternate 3s;
+}
+
+.banner-content p:nth-child(odd){
+	border-top: 2px solid white;
+	padding-top: 5px;
+}
+
+
+.banner-content p:nth-child(even){
+	border-bottom: 2px solid lavender;
+	padding-bottom: 5px;
+}
+
+.banner-content p:nth-child(even):hover{
+	border-bottom: 2px solid lavender;
+	padding-bottom: 5px;
+
+}
+
+@keyframes content{
+	from{
+		transform: translateX(10px) translateY(10px);
+	}
+}
+
+@keyframes banne{
+	from{
+		transform: translateX(5px);
+	}
+}
+
+
+.content-main{
+	position: relative;
+	top: 45px;
+	height: 500px;
+	width: 100%;
+	background: linear-gradient(140deg,
+		cyan,indigo,indigo
+	);
+	opacity: .8;
+}
+
+
+.content-main .row-content{
+	width: 100%;
+	display: flex;
+}
+
+.row-content .col-content-left{
+	width: 30%;
+	height: 100%;
+}
+
+.col-content-left p{
+	font-size: 130px;
+	font-family: sans-serif;
+	font-weight: 900;
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 130px;
+}
+
+.col-content-right{
+	font-family: sans-serif;
+	position: relative;
+	top: 100px;
+}
+
+.col-content-right .content-2,.content-3{
+	margin-top: 10px;
+}
+
+.content-1,.content-2,.content-3{
+	height: 70px;
+	margin-top: 10px;
+}
+
+
+.col-content-right p:nth-child(odd){
+color: white;
+font-size: 23px;
+font-weight: 900;
+}
+
+.col-content-right p:nth-child(even){
+	width: 700px;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: white;
+}
+
+
+.right-btn{
+position: relative;
+left: 25px;
+top: 35px;
+}
+
+.right-btn button{
+	padding: 8px 12px;
+	border-radius: 40px;
+	color: black;
+	border: none;
+	cursor: pointer;
+}
